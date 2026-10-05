@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Guide &mdash; Goal and Habit Tracker</title>
+<meta name="description" content="Six habit ideas with the research behind them, and a 30-day tracker you can print. Free.">
+<style>
+  :root { color-scheme: light dark; --ink: #1b1b1f; --soft: #4a4a55; --line: #d9d9de; --bg: #fff; --card: #f5f6f8; --accent: #0369a1; }
+  * { box-sizing: border-box; }
+  body { margin: 0 auto; padding: 2.5rem 1rem 4rem; max-width: 42rem; font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  p, li { margin: 0 0 .9rem; }
+  a { color: var(--accent); }
+  .lead { color: var(--soft); font-size: 1.05rem; }
+  ol.tips { padding: 0; list-style: none; counter-reset: tip; }
+  ol.tips > li { counter-increment: tip; background: var(--card); border-radius: 14px; padding: 1rem 1.1rem 1rem 3.2rem; position: relative; }
+  ol.tips > li::before { content: counter(tip); position: absolute; left: 1rem; top: 1rem; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: .9rem; display: grid; place-items: center; }
+  ol.tips h3 { margin: 0 0 .35rem; font-size: 1.02rem; }
+  ol.tips p { margin: 0 0 .5rem; }
+  ol.tips p:last-child { margin: 0; }
+  .fill { font-family: ui-monospace, Menlo, monospace; font-size: .95rem; }
+  .sheet { margin-top: 1rem; }
+  .habit { border: 1px solid var(--line); border-radius: 14px; padding: .9rem; margin-bottom: 1rem; break-inside: avoid; }
+  .habit .name { border-bottom: 1px solid var(--line); height: 1.8rem; margin-bottom: .4rem; font-size: .85rem; color: var(--soft); }
+  .habit .anchor { border-bottom: 1px solid var(--line); height: 1.8rem; margin-bottom: .8rem; font-size: .85rem; color: var(--soft); }
+  .days { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
+  .days span { aspect-ratio: 1; border: 1.5px solid var(--line); border-radius: 6px; font-size: .62rem; color: var(--soft); padding: 2px 3px; line-height: 1; }
+  .print { display: inline-block; margin: .25rem 0 1rem; padding: .6rem 1.1rem; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; cursor: pointer; }
+  .app { margin-top: 2.5rem; padding: 1.1rem; border-radius: 14px; background: var(--card); }
+  .app p:last-child { margin: 0; }
+  .sources { font-size: .875rem; color: var(--soft); }
+  .sources li { margin-bottom: .5rem; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .875rem; color: var(--soft); }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e6e6ea; --soft: #a3a3ad; --line: #34343c; --bg: #16161a; --card: #1f1f25; --accent: #8ab4f8; }
+    ol.tips > li::before { color: #10131a; }
+  }
+  @media print {
+    :root { --ink: #000; --soft: #444; --line: #999; --bg: #fff; --card: #fff; --accent: #000; }
+    body { padding: 0; max-width: none; font-size: 11pt; }
+    .print, .app, footer, .no-print { display: none; }
+    ol.tips > li { border: 1px solid #ccc; padding: .5rem .7rem .5rem 2.6rem; }
+    ol.tips > li::before { left: .6rem; top: .55rem; border: 1px solid #000; background: #fff; color: #000; }
+    #sheet { break-before: page; }
+  }
+</style>
+</head>
+<body>
+<h1>The habit guide</h1>
+<p class="lead">Six ideas that make a habit stick, with the research behind them, and a 30-day tracker you can print. Free; nothing to sign up for.</p>
+
+<h2>Six ideas</h2>
+<ol class="tips">
+  <li>
+    <h3>Start smaller than feels worth it</h3>
+    <p>Pick a version of the habit you could do on your worst day: one push-up, one page, two minutes. On good days do more if you like, but the small version is the one that counts. You are building the habit of showing up first.</p>
+  </li>
+  <li>
+    <h3>Tie it to something you already do</h3>
+    <p>Write it as a plan: <span class="fill">After I [something I already do], I will [the habit].</span> For example: <em>after I pour my morning tea, I will read one page.</em></p>
+    <p>Plans in this &ldquo;when&hellip; then&hellip;&rdquo; form are called implementation intentions. A review of 94 studies with more than 8,000 people found they help people do what they meant to do, by a medium-to-large amount.</p>
+  </li>
+  <li>
+    <h3>Expect about two months, not 21 days</h3>
+    <p>In a study that followed people building a new daily habit, it took 66 days on average for the habit to feel automatic, and anywhere from 18 to 254 days depending on the person and the habit. If it still feels like effort after three weeks, nothing is wrong.</p>
+  </li>
+  <li>
+    <h3>Missing one day does not undo it</h3>
+    <p>The same study found that a single missed day had little effect on how the habit formed. What hurts is the second day, when a slip turns into a new routine. So the rule is simple: <strong>never miss twice.</strong></p>
+  </li>
+  <li>
+    <h3>Make it easy to start and hard to skip</h3>
+    <p>Put the book on your pillow, the shoes by the door, the water bottle on your desk. Make the thing you want to stop doing a little harder: the phone in another room, the snacks on a high shelf. Fewer steps to start means fewer chances to talk yourself out of it.</p>
+  </li>
+  <li>
+    <h3>Tick it off where you will see it</h3>
+    <p>Mark the day right after you do the habit, not at night from memory. A row of ticks is a small reward in itself, and it shows you honestly how the month is going. The sheet below is made for that.</p>
+  </li>
+</ol>
+
+<h2 id="sheet">Your 30-day sheet</h2>
+<p class="no-print">Print this page (the sheet comes out on its own page), or draw the boxes in a notebook. Write the habit and its plan, then tick a box each day you do it.</p>
+<button class="print" onclick="window.print()">Print the guide and the sheet</button>
+<div class="sheet">
+  <div class="habit"><div class="name">Habit 1:</div><div class="anchor">After I</div><div class="days"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div></div>
+  <div class="habit"><div class="name">Habit 2:</div><div class="anchor">After I</div><div class="days"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div></div>
+  <div class="habit"><div class="name">Habit 3:</div><div class="anchor">After I</div><div class="days"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div></div>
+</div>
+
+<div class="app">
+  <p><strong>Rather keep it on your phone?</strong> I made <a href="https://play.google.com/store/apps/details?id=io.github.ankeet2007.goaltracker">Goal and Habit Tracker</a>, free on Google Play for Android: daily goals, habits that repeat, streaks and a calendar of the days you kept them. It shows ads; there is no subscription.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. and Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. <em>European Journal of Social Psychology</em>, 40(6), 998&ndash;1009. Summary: <a href="https://www.bps.org.uk/research-digest/how-form-habit">BPS Research Digest</a>.</li>
+  <li>Gollwitzer, P. M. and Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. <em>Advances in Experimental Social Psychology</em>, 38, 69&ndash;119. <a href="https://www.socmot.uni-konstanz.de/publications/implementation-intentions-and-goal-achievement-meta-analysis-effects-and-processes">Abstract</a>.</li>
+  <li>Starting tiny and tying a habit to an existing routine: B. J. Fogg, <em>Tiny Habits</em> (2019); James Clear, <em>Atomic Habits</em> (2018).</li>
+</ol>
+
+<footer>
+  <p>From the maker of Goal and Habit Tracker. Questions: <a href="mailto:contact.goaltracker@gmail.com">contact.goaltracker@gmail.com</a> &middot; <a href="../">Privacy policy</a></p>
+</footer>
+</body>
+</html>
